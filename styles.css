@@ -1,0 +1,639 @@
+/* =========================================
+   CHARITY: WATER BRAND COLORS
+   ========================================= */
+
+:root {
+  --yellow: #FFC907;
+  --dark-blue: #003366;
+  --soft-blue: #77A8BB;
+  --cream: #FFF7E1;
+  --black: #1A1A1A;
+  --peach: #FED8C1;
+  --brown: #BF6C46;
+  --light-gray: #CBCCD1;
+}
+
+
+/* =========================================
+   GENERAL PAGE STYLES
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--cream);
+  color: var(--black);
+
+  font-family: "Proxima Nova", Avenir, Arial, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 6%;
+
+  background-color: #ffffff;
+
+  border-bottom: 1px solid var(--light-gray);
+}
+
+
+/* Logo */
+
+.logo img {
+  display: block;
+
+  width: 190px;
+  height: auto;
+}
+
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.navigation a {
+  color: var(--dark-blue);
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 600px;
+
+  margin: 0;
+
+  background-color: var(--cream);
+}
+
+
+/* Hero image */
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Hero text */
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 70px 8%;
+
+  background-color: var(--cream);
+}
+
+
+/* Small uppercase heading */
+
+.eyebrow {
+  margin: 0 0 16px;
+
+  color: var(--dark-blue);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+
+/* Main hero heading */
+
+.hero h1 {
+  margin: 0 0 24px;
+
+  color: var(--dark-blue);
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+  line-height: 1.05;
+
+  font-weight: bold;
+}
+
+
+/* Hero secondary heading */
+
+.hero h2 {
+  margin: 0 0 20px;
+
+  color: var(--black);
+
+  font-size: 1.35rem;
+
+  line-height: 1.4;
+
+  font-weight: normal;
+}
+
+
+/* Hero paragraph */
+
+.hero-text > p:not(.eyebrow) {
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTON
+   ========================================= */
+
+.donate-button {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-top: 30px;
+
+  padding: 15px 28px;
+
+  background-color: var(--yellow);
+
+  color: var(--black);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  border: 2px solid var(--yellow);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.donate-button:hover {
+  background-color: var(--dark-blue);
+
+  border-color: var(--dark-blue);
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   STORY / COLLEGE STUDENT SECTION
+   ========================================= */
+
+.story {
+  margin: 0;
+
+  padding: 100px 8%;
+
+  background-color: #ffffff;
+
+  text-align: center;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+.section-heading {
+  max-width: 750px;
+
+  margin: 0 auto 60px;
+}
+
+
+.section-heading h2 {
+  margin: 0 0 22px;
+
+  color: var(--dark-blue);
+
+  font-size: 2.5rem;
+
+  line-height: 1.15;
+}
+
+
+.section-heading > p:not(.eyebrow) {
+  margin: 0;
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+
+/* Three student-focused columns */
+
+.student-benefits {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+.benefit {
+  padding: 30px;
+
+  border-top: 5px solid var(--yellow);
+
+  background-color: var(--cream);
+}
+
+
+.benefit h3 {
+  margin: 0 0 14px;
+
+  color: var(--dark-blue);
+
+  font-size: 1.4rem;
+}
+
+
+.benefit p {
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   IMPACT SECTION
+   ========================================= */
+
+.impact-story {
+  margin: 0;
+
+  padding: 100px 8%;
+
+  background-color: var(--soft-blue);
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+.impact-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* Impact text */
+
+.impact-text h2 {
+  margin: 0 0 25px;
+
+  color: var(--dark-blue);
+
+  font-size: 2.7rem;
+
+  line-height: 1.15;
+}
+
+
+.impact-text p:not(.eyebrow) {
+  margin-bottom: 20px;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+}
+
+
+/* Impact image */
+
+.impact-image {
+  width: 100%;
+
+  margin: 0;
+
+  box-shadow: none;
+
+  border-radius: 0;
+
+  overflow: hidden;
+}
+
+
+.impact-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   FINAL CALL TO ACTION
+   ========================================= */
+
+.call-to-action {
+  margin: 0;
+
+  padding: 100px 8%;
+
+  background-color: var(--yellow);
+
+  color: var(--black);
+
+  text-align: center;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+.call-to-action .eyebrow {
+  color: var(--dark-blue);
+}
+
+
+.call-to-action h2 {
+  margin: 0 0 20px;
+
+  color: var(--dark-blue);
+
+  font-size: 3rem;
+
+  line-height: 1.1;
+}
+
+
+.call-to-action p:not(.eyebrow) {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+
+/* Make CTA button dark blue */
+
+.call-to-action .donate-button {
+  background-color: var(--dark-blue);
+
+  border-color: var(--dark-blue);
+
+  color: #ffffff;
+}
+
+
+.call-to-action .donate-button:hover {
+  background-color: #ffffff;
+
+  border-color: #ffffff;
+
+  color: var(--dark-blue);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 30px 6%;
+
+  background-color: var(--dark-blue);
+
+  color: #ffffff;
+
+  font-size: 0.9rem;
+}
+
+
+.footer p {
+  margin: 0;
+}
+
+
+/* =========================================
+   TABLET / SMALL LAPTOP
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .header {
+    padding: 18px 4%;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .navigation a {
+    font-size: 0.75rem;
+  }
+
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    min-height: 450px;
+  }
+
+  .hero-text {
+    padding: 70px 8%;
+  }
+
+
+  .student-benefits {
+    grid-template-columns: 1fr;
+  }
+
+
+  .impact-content {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .impact-image img {
+    height: 450px;
+  }
+
+
+  .footer {
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   PHONE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .header {
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding: 18px 20px;
+  }
+
+
+  .logo img {
+    width: 170px;
+  }
+
+
+  .navigation {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+
+  .hero-image {
+    min-height: 350px;
+  }
+
+
+  .hero-text {
+    padding: 55px 25px;
+  }
+
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+
+  .hero h2 {
+    font-size: 1.15rem;
+  }
+
+
+  .story,
+  .impact-story,
+  .call-to-action {
+    padding: 70px 25px;
+  }
+
+
+  .section-heading h2,
+  .impact-text h2 {
+    font-size: 2rem;
+  }
+
+
+  .call-to-action h2 {
+    font-size: 2.4rem;
+  }
+
+
+  .impact-image img {
+    height: 300px;
+  }
+
+
+  .footer {
+    padding: 25px 20px;
+  }
+}
